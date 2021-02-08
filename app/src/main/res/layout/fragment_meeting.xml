@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/itemList_parentLayout">
+
+    <ImageView
+        android:id="@+id/image_circle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/shape_drawable_cercle"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/cercle_color" />
+
+    <TextView
+        android:id="@+id/details_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_union_a_14h00_peach"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/image_circle"
+        android:layout_marginStart="15dp"/>
+
+    <ImageButton
+        android:id="@+id/item_list_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_delete_black_24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/corbeille" />
+
+
+    <TextView
+        android:id="@+id/colleagues_emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_item"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/image_circle"
+        android:layout_toStartOf="@id/item_list_delete_button"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/alexandre_lamzone_com_alex_lamzone_com"
+        android:textColor="#000" />
+
+</RelativeLayout>

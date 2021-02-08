@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Maréu</string>
+    <string name="action_hour">Tri par heure</string>
+    <string name="action_place">Tri par lieu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tiret">-</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="nom_de_la_reunion">Nom de la réunion</string>
+    <string name="heure_de_la_reunion">Heure de la réunion</string>
+    <string name="lieu_de_la_reunion">Lieu de la réunion</string>
+    <string name="participants_e_mail">   Participants (e-mail)</string>
+    <string name="nom_de_la_r_union"> Nom de la réunion</string>
+    <string name="lieu">Salle</string>
+    <string name="nom">Nom</string>
+    <string name="sujet">Sujet</string>
+    <string name="heure">Heure</string>
+    <string name="ajouter_une_r_union">Ajouter une réunion</string>
+    <string name="porte">porte</string>
+    <string name="colleagues">Collègues (E-mail)</string>
+    <string name="create">Create</string>
+    <string name="r_union_a_14h00_peach">Réunion A - 14h00 - Peach</string>
+    <string name="corbeille">Bouton</string>
+    <string name="alexandre_lamzone_com_alex_lamzone_com">alexandre@lamzone.com, alex@lamzone.com</string>
+    <string name="cercle_color">cercle coloré</string>
+    <string name="select_place">Salles</string>
+    <string name="select_time">Heure</string>
+    <string name="afficher_la_liste">Afficher la liste</string>
+    <string name="item_4">Item 4</string>
+    <string name="date">Date</string>
+</resources>
