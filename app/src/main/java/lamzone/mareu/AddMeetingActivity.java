@@ -1,5 +1,6 @@
 package lamzone.mareu;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -29,6 +30,7 @@ import com.hootsuite.nachos.terminator.ChipTerminatorHandler;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.text.DateFormat;
 import java.util.Calendar;
 
 import butterknife.BindView;
@@ -104,15 +106,18 @@ public class AddMeetingActivity extends AppCompatActivity {
             int month = calendar.get(Calendar.MONTH);
             int year = calendar.get(Calendar.YEAR);
 
-            datePickerDialog = new DatePickerDialog(AddMeetingActivity.this, new DatePickerDialog.OnDateSetListener() {
+            int style = AlertDialog.THEME_HOLO_LIGHT;
+            datePickerDialog = new DatePickerDialog(AddMeetingActivity.this, style, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                     dateInput.setText(dayOfMonth+"/"+month+"/"+year);
                     dayInput = dayOfMonth;
                     monthInput = month;
                     yearInput = year;
+
                 }
             }, day, month, year);
+            datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
             datePickerDialog.setTitle("Date de la réunion");
             datePickerDialog.show();
         });

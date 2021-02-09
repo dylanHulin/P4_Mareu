@@ -35,7 +35,7 @@ import lamzone.service.ApiService;
 import lamzone.service.DummyApiService;
 
 
-public class ListMeetingActivity extends AppCompatActivity implements RoomDialog.NoticeDialogListener, TimeDialog.NoticeDialogListener,DateDialog.NoticeDialogListener {
+public class ListMeetingActivity extends AppCompatActivity implements RoomDialog.NoticeDialogListener, DateDialog.NoticeDialogListener {
 
     @BindView(R.id.meetingListRecyclerView)
     RecyclerView rv;
@@ -83,10 +83,6 @@ public class ListMeetingActivity extends AppCompatActivity implements RoomDialog
                 apiService.getFilterMeetings().clear();
                 openRoomDialog();
                 return true;
-            case R.id.timeFilterSubItem:
-                apiService.getFilterMeetings().clear();
-                openTimeDialog();
-                return true;
             case R.id.dateFilterSubItem:
                 apiService.getFilterMeetings().clear();
                 openDateDialog();
@@ -107,16 +103,6 @@ public class ListMeetingActivity extends AppCompatActivity implements RoomDialog
 
     @Override
     public void onRoomDialogPositiveClick(List<Meeting> meetingsFilter) {
-        mAdapter.setListMeetings(meetingsFilter);
-    }
-
-    private void openTimeDialog() {
-        TimeDialog timeDialog = new TimeDialog();
-        timeDialog.show(getSupportFragmentManager(), "time dialog");
-    }
-
-    @Override
-    public void onTimeDialogPositiveClick(List<Meeting> meetingsFilter) {
         mAdapter.setListMeetings(meetingsFilter);
     }
 

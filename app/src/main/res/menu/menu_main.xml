@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/filterItem"
-        android:title="@string/item_4"
+        android:title="@string/item_3"
         android:icon="@drawable/ic_filter_list_white_24dp"
         app:showAsAction="always">
 
@@ -13,9 +13,9 @@
                 android:id="@+id/roomFilterSubItem"
                 android:title="@string/select_place" />
 
-            <item
-                android:id="@+id/timeFilterSubItem"
-                android:title="@string/select_time" />
+<!--            <item-->
+<!--                android:id="@+id/timeFilterSubItem"-->
+<!--                android:title="@string/select_time" />-->
 
             <item
                 android:id="@+id/dateFilterSubItem"
